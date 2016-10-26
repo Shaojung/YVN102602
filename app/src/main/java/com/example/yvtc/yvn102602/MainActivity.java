@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
         m3.put("code", "07");
         mylist2.add(m3);
 
-        adapter2 = new SimpleAdapter(MainActivity.this, mylist2, android.R.layout.simple_list_item_2,
-                new String[]{"city", "code"}, new int[] {android.R.id.text1, android.R.id.text2});
+        adapter2 = new SimpleAdapter(MainActivity.this, mylist2, R.layout.myitem,
+                new String[]{"city", "code"}, new int[] {R.id.textView3, R.id.textView4});
 
         spinner2.setAdapter(adapter2);
 
